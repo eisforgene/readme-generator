@@ -1,5 +1,6 @@
-const inquirer = require('inquirer')
-let inquire = require('inquirer')
+const inquirer = require('inquirer');
+
+const fs = require('fs');
 
 getUserInput(); 
 
@@ -48,7 +49,42 @@ function getUserInput() {
             choices: ['MIT', 'ISC', 'Apache', 'GPL', 'BST', 'None'],
             name: "license"
         },
-    ]).then(answers =>{
+    ]).then(answers => {
         console.log(answers)
-    }) 
+        let readMeText = `
+# ${answers.projectName}
+## Contributed by: ${answers.contributorName}
+### Table of Contents
+* [Description](#description)
+* [GitHub User](#githubUser)
+* [Installation](#installation)
+* [Testing](#testing)
+* [Usage](#usage)
+* [License](#license)
+* [Contact Us](#email)
+
+##### Description: 
+${answers.projectDescription}
+
+##### GitHub Profile:
+https://github.com/${answers.githubUser}
+
+##### Installation: 
+${answers.install}
+
+##### Testing:
+${answers.testing}
+
+##### Usage:
+${answers.usage}
+
+##### License:
+${answers.license}
+
+##### Contact Us:
+${answers.email}
+`
+console.log(readMeText)
+
+    })
 }
