@@ -51,8 +51,8 @@ function getUserInput() {
         },
     ]).then(answers => {
         console.log(answers)
-        let readMeText = `
-# ${answers.projectName}
+        let readMeText = 
+`# ${answers.projectName}
 ## Contributed by: ${answers.contributorName}
 ### Table of Contents
 * [Description](#description)
