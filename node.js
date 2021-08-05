@@ -2,29 +2,29 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
-getUserInput(); 
+getUserInput();
 
 function getUserInput() {
     inquirer.prompt([
         {
-            type:"input",
-            message:"Enter Project Name",
-            name:"projectName"
+            type: "input",
+            message: "Enter Project Name",
+            name: "projectName"
         },
         {
-            type:"input",
-            message:"Contributor's Name",
-            name:"contributorName"
+            type: "input",
+            message: "Contributor's Name",
+            name: "contributorName"
         },
         {
-            type:"input",
-            message:"Enter Email Address",
-            name:"email"
+            type: "input",
+            message: "Enter Email Address",
+            name: "email"
         },
         {
-            type:"input",
-            message:"Enter GitHub Username",
-            name:"githubUser"
+            type: "input",
+            message: "Enter GitHub Username",
+            name: "githubUser"
         },
         {
             type: "input",
@@ -35,15 +35,15 @@ function getUserInput() {
             type: "input",
             message: "Testing Requirements",
             name: "testing"
-        },{
+        }, {
             type: "input",
             message: "Installation Requirements",
             name: "install"
-        },{
+        }, {
             type: "input",
             message: "Usage",
             name: "usage"
-        },{
+        }, {
             type: "list",
             message: "License",
             choices: ['MIT', 'ISC', 'Apache', 'GPL', 'BST', 'None'],
@@ -80,11 +80,18 @@ ${answers.usage}
 
 ##### License:
 ${answers.license}
+![GitHub license](https://img.shields.io/badge/license-${answers.license}-blue.svg)
+
 
 ##### Contact Us:
 ${answers.email}
-`
-console.log(readMeText)
 
+`
+        console.log(readMeText)
+        fs.writeFileSync('README.md', readMeText, function (err, data) {
+            if (err) throw err;
+            console.log("File written", data)
+        })
+        console.log("README Generated")
     })
 }
