@@ -1,0 +1,25 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "read me generator",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eisforgene/readme-generator.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Eugene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eisforgene/readme-generator/issues"
+  },
+  "homepage": "https://github.com/eisforgene/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
