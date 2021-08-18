@@ -56,7 +56,7 @@ function getUserInput() {
 ## Contributed by: ${answers.contributorName}
 ### Table of Contents
 * [Description](#description)
-* [GitHub User](#githubUser)
+* [GitHub User](#github)
 * [Installation](#installation)
 * [Testing](#testing)
 * [Usage](#usage)
@@ -66,7 +66,7 @@ function getUserInput() {
 ##### Description: 
 ${answers.projectDescription}
 
-##### GitHub Profile:
+##### Github:
 https://github.com/${answers.githubUser}
 
 ##### Installation: 
@@ -83,7 +83,7 @@ ${answers.license}
 ![GitHub license](https://img.shields.io/badge/license-${answers.license}-blue.svg)
 
 
-##### Contact Us:
+##### Email:
 ${answers.email}
 
 `

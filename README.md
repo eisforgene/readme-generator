@@ -1,9 +1,8 @@
-
-# Eugene
-## Contributed by: Eugene
+# Read Me Generator
+## Contributed by: Eugene Lee
 ### Table of Contents
 * [Description](#description)
-* [GitHub User](#githubUser)
+* [GitHub User](#github)
 * [Installation](#installation)
 * [Testing](#testing)
 * [Usage](#usage)
@@ -11,25 +10,25 @@
 * [Contact Us](#email)
 
 ##### Description: 
-Generator
+Generates a readme for the project through Node.js
 
-##### GitHub Profile:
-https://github.com/Eisforgene
+##### Github:
+https://github.com/eisforgene
 
 ##### Installation: 
-npm i
+inquirer
 
 ##### Testing:
-manual
+
 
 ##### Usage:
-free
+
 
 ##### License:
 MIT
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
-##### Contact Us:
+##### Email:
 ieugenelee@gmail.com
 
