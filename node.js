@@ -88,7 +88,7 @@ ${answers.email}
 
 `
         console.log(readMeText)
-        fs.writeFileSync('README.md', readMeText, function (err, data) {
+        fs.writeFileSync('READMEProject.md', readMeText, function (err, data) {
             if (err) throw err;
             console.log("File written", data)
         })
