@@ -1,5 +1,5 @@
-# Readme Generator
-## Contributed by: Eugene
+# readme generator
+## Contributed by: eugene
 ### Table of Contents
 * [Description](#description)
 * [GitHub User](#github)
@@ -10,25 +10,25 @@
 * [Contact Us](#email)
 
 ##### Description: 
-Generates a professional readme through Node
+creates a readme
 
 ##### Github:
-https://github.com/eisforgene
+https://github.com/eugene
 
 ##### Installation: 
 inquirer
 
 ##### Testing:
-None
+undefined
 
 ##### Usage:
-run node index.js
+node node
 
 ##### License:
-Apache
-![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)
+MIT
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 
 ##### Email:
-ieugenelee@gmail.com
+eugene@gmail.com
 

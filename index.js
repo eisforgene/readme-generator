@@ -33,10 +33,6 @@ function getUserInput() {
         },
         {
             type: "input",
-            message: "Testing Requirements",
-            name: "testing"
-        }, {
-            type: "input",
             message: "Installation Requirements",
             name: "install"
         }, {
